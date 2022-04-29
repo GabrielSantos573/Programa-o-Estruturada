@@ -1,8 +1,8 @@
 #include <stdio.h>
  
  
-void head(); // 2 - protótipo do procedimento
-float soma(float n1, float num2); // 2 - protótipo da função
+void head(); // 2 - protÃ³tipo do procedimento
+float soma(float n1, float num2); // 2 - protÃ³tipo da funÃ§Ã£o
 char le_valida_operador();
  
 int main() {
@@ -26,7 +26,7 @@ int main() {
 	switch(op){
 		case '+':
 			result = soma(n1,n2);
-			printf("RESULTADO:   %.1f\n",result); // 3 - chamada da função soma()
+			printf("RESULTADO:   %.1f\n",result); // 3 - chamada da funÃ§Ã£o soma()
 		break;
 		case '-':
 			printf("RESULTADO:   %.1f\n",n1-n2);
@@ -46,14 +46,14 @@ int main() {
 	return 0;
 }
  
-// 1 - declaração do procedimento
+// 1 - declaraÃ§Ã£o do procedimento
 void head(){
 	printf("---------------\n");
 	printf("CALC\n");
 	printf("---------------\n");	
 }
  
-// 1 - declaração da função
+// 1 - declaraÃ§Ã£o da funÃ§Ã£o
 float soma(float n1, float num2){
 	float resultado;
 	resultado = n1 + num2;
