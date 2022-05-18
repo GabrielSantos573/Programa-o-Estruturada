@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+	
+	int i = 0, g = 0;
+	
+	struct Estudante{
+		char nome[200], matricula[10];
+		float nota[4], media;
+	};
+	
+	struct Estudante estudante[10];
+	
+	for(i; i < 11; i++){
+		printf("\nNome: ");
+		scanf("%[^\n]s", &estudante[i].nome);
+		
+		fflush(stdin);
+		
+		printf("Matricula: ");
+		scanf("%s", &estudante[i].matricula);
+		
+		fflush(stdin);
+		
+		estudante[i].media = 0;
+		for(g; g < 4; g++){
+			printf("Nota: ");
+			scanf("%f", &estudante[i].nota[g]);
+			fflush(stdin);
+			estudante[i].media += estudante[i].nota[g];
+		}
+		
+		estudante[i].media /= 4;
+		printf("Media: %.2f", estudante[i].media);
+		
+	}
+	
+	return 0;
+}
